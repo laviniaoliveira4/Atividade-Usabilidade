@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <style>
+        .header{
+            background-color: rgb(196, 151, 84);
+        }
+
+
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="header"> SISTEMA DE GESTÃO ACADÊMICA </header>
+    <h2> MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h2>
+
+    <form>
+        <label for="login"> Login</label>
+        <input type="login" id="login" name="login" style="margin-left: 90px;"> <br>
+
+        <label for="senha"> Senha</label>
+        <input type="senha" id="senha" name="senha" style="margin-left: 90px;"><br>
+
+        <label for="status" > Status</label>
+        <select id="status" name="status" style="margin-left: 90px;"> 
+            <option value="inativo"> Inativo</option>
+        </select> <br>
+
+        <label for="tipo"> Tipo</label>
+        <input type="radio" id="tecnico" name="tipo" value="tecnico" style="margin-left: 100px;">
+        <label for="tecnico"> Técnico</label>
+        <input type="radio" id="professor" name="tipo" value="professor" >
+        <label for="professor"> Professor</label>
+        <input type="radio" id="aluno" name="tipo" value="aluno">
+        <label for="aluno"> Aluno</label> <br>
+
+        <label for="data criacao"> Data Criação</label>
+        <input type="login" id="login" name="login" size="16" style="margin-left: 48px;"> <br>
+
+        <label for="observacoes" style="margin-right: 50px;"> Observações</label>
+        <textarea for="text" name="observacoes" id="observacoes" style="height: 100px; width: 300px;"></textarea> <br>
+
+        <label for="modulos"> Módulos </label>
+        <input type="checkbox" id="compras" name="compras" value="compras" style="margin-left: 75px";>
+        <label for="compras"> Compras </label>
+        <input type="checkbox" id="biblioteca" name="biblioteca" value="biblioteca">
+        <label for="biblioteca"> Biblioteca </label>
+        <input type="checkbox" id="academico" name="academico" value="academico">
+        <label for="academico"> Acadêmico </label> <br>
+        <input type="checkbox" id="documentacao" name="documentacao" value="documentacao"  style="margin-left: 137px">
+        <label for="documentacao"> Documentação </label>
+        <input type="checkbox" id="recursos humanos" name="recursos humanos" value="recursos humanos">
+        <label for="recursos humanos"> Recursos Humanos </label> <br><br>
+        
+        <input type="button" value="Cadastrar">
+        <input type="button" value="Excluir">
+    </form>
+</body>
+</html>
